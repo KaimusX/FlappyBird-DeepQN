@@ -16,7 +16,7 @@ from reward import shaped_reward
 # --- Hyperparameters ---
 EPISODES        = 1000    # total training episodes
 BATCH_SIZE      = 64      # how many experiences to sample per update
-BUFFER_CAPACITY = 10000   # max experiences stored
+BUFFER_CAPACITY = 1000   # max experiences stored
 GAMMA           = 0.99    # discount factor — how much future rewards matter
 LR              = 1e-4    # learning rate
 EPSILON_START   = 1.0     # start fully random
