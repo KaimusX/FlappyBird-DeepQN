@@ -21,7 +21,7 @@ GAMMA           = 0.99    # discount factor — how much future rewards matter
 LR              = 1e-4    # learning rate
 EPSILON_START   = 1.0     # start fully random
 EPSILON_MIN     = 0.01    # never go fully greedy
-EPSILON_DECAY   = 0.990   # how fast to reduce randomness
+EPSILON_DECAY   = 0.999   # how fast to reduce randomness
 TARGET_UPDATE   = 10      # copy main → target network every N episodes
 
 # --- Setup ---
