@@ -22,7 +22,7 @@ LR              = 1e-4    # learning rate
 EPSILON_START   = 1.0     # start fully random
 EPSILON_MIN     = 0.01    # never go fully greedy
 EPSILON_DECAY   = 0.995   # how fast to reduce randomness
-TARGET_UPDATE   = 10      # copy main → target network every N episodes
+TARGET_UPDATE   = 1      # copy main → target network every N episodes
 
 # --- Setup ---
 env = gym.make("FlappyBird-v0", use_lidar=False) # add , render_mode="human" if you want to see(slower)
