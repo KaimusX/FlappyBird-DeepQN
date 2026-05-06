@@ -16,12 +16,12 @@ from reward import shaped_reward
 # --- Hyperparameters ---
 EPISODES        = 1000    # total training episodes
 BATCH_SIZE      = 64      # how many experiences to sample per update
-BUFFER_CAPACITY = 50000   # max experiences stored
+BUFFER_CAPACITY = 10000   # max experiences stored
 GAMMA           = 0.99    # discount factor — how much future rewards matter
 LR              = 1e-4    # learning rate
 EPSILON_START   = 1.0     # start fully random
 EPSILON_MIN     = 0.01    # never go fully greedy
-EPSILON_DECAY   = 0.995   # how fast to reduce randomness
+EPSILON_DECAY   = 0.990   # how fast to reduce randomness
 TARGET_UPDATE   = 10      # copy main → target network every N episodes
 
 # --- Setup ---
