@@ -12,11 +12,11 @@ class DQN(nn.Module):
         # 12 inputs -> two hidden layers -> 2 outputs (one Q-value per action)
         # 128 neurons per layer is a reasonable starting size for a 12-dim input
         self.net = nn.Sequential(
-            nn.Linear(12, 32),
+            nn.Linear(12, 256),
             nn.ReLU(),
-            nn.Linear(32, 32),
+            nn.Linear(256, 256),
             nn.ReLU(),
-            nn.Linear(32, 2)
+            nn.Linear(256, 2)
         )
 
     def forward(self, x):
