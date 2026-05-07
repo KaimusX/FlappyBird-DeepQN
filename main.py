@@ -11,7 +11,7 @@ import gymnasium as gym
 
 from model import DQN
 from replay_buffer import ReplayBuffer
-from reward import shaped_reward
+from reward import shaped_reward, REWARD_MODE
 
 # --- Hyperparameters ---
 EPISODES        = 1000    # total training episodes
@@ -38,6 +38,7 @@ buffer    = ReplayBuffer(BUFFER_CAPACITY)
 epsilon   = EPSILON_START
 
 # --- Training loop ---
+print(f"Reward mode: {REWARD_MODE}")
 for episode in range(EPISODES):
     obs, _ = env.reset()
     done = False
